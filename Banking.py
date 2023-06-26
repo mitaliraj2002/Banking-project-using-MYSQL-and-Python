@@ -7,7 +7,7 @@ def clear():
         
     def account_status(accno):
             conn = mysql.connector.connect(
-                host ='localhost',database ='bankproject',user ='ravi',password ='rishav2841')
+                host ='localhost',database ='bankproject',user ='mitali',password ='Mitali@12')
             cursor = conn.cursor()
             sql = "select status ,balance from customer where acno =' "+accno+" '"
             result = cursor.execute(sql)
@@ -17,7 +17,7 @@ def clear():
         
     def deposit_amount():
          conn = mysql.connector.connect(
-                host ='localhost',database ='bankproject',user ='ravi',password ='rishav2841')
+                host ='localhost',database ='bankproject',user ='mitali',password ='Mitali@12')
          cursor = conn.cursor()
          clear()
          acno = input('Enter account no :')
@@ -40,7 +40,7 @@ def clear():
                                   
     def withdraw_amount():
         conn = mysql.connector.connect(
-                host ='localhost',database ='bankproject',user ='ravi',password ='rishav2841')
+                host ='localhost',database ='bankproject',user ='mitali',password ='Mitali@12')
         cursor = conn.cursor()
         clear()
         acno = input('Enter account no :')
@@ -81,7 +81,7 @@ def clear():
             
     def search_menu():
         conn = mysql.connector.connect(
-                host ='localhost',database ='bankproject',user ='ravi',password ='rishav2841')
+                host ='localhost',database ='bankproject',user ='mitali',password ='Mitali@12')
         cursor = conn.cursor()
         while True:
             clear()
@@ -141,7 +141,7 @@ def account_details():
     clear() 
     acno = input('Enter account no :')
     conn = mysql.connector.connect(
-           host ='localhost',database ='bankproject',user ='ravi',password ='rishav2841')
+           host ='localhost',database ='bankproject',user ='mitali',password ='Mitali@12')
     cursor = conn.cursor()
     sql = 'select * From customer where acno ='+acno+';'
     sql1 = 'select tid,dot,amount,type From transaction t where t.acno='+acno+';'
@@ -170,7 +170,7 @@ def account_details():
     
     def add_Account():
          conn = mysql.connector.connect(
-           host ='localhost',database ='bankproject',user ='ravi',password ='rishav2841')
+           host ='localhost',database ='bankproject',user ='mitali',password ='Mitali@12')
     cursor = conn.cursor()
     
     name = input('Enter Name:')
@@ -190,7 +190,7 @@ def account_details():
     
 def modify_account(): 
     conn = mysql.connector.connect(
-           host ='localhost',database ='bankproject',user ='ravi',password ='rishav2841')
+           host ='localhost',database ='bankproject',user ='mitali',password ='Mitali@12')
     cursor = conn.cursor()
     clear()
     acno = input('Enter customer Account No. :')
@@ -218,7 +218,7 @@ def modify_account():
     
 def close_account():
     conn = mysql.connector.connect(
-           host ='localhost',database ='bankproject',user ='ravi',password ='rishav2841')
+           host ='localhost',database ='bankproject',user ='mitali',password ='Mitali@12')
     cursor = conn.cursor()
     clear()
     acno = input('Enter customer Account No. :')
@@ -230,7 +230,7 @@ def close_account():
     
 def  activate_account():
     conn = mysql.connector.connect(
-           host ='localhost',database ='bankproject',user ='ravi',password ='rishav2841')
+           host ='localhost',database ='bankproject',user ='mitali',password ='Mitali@12')
     cursor = conn.cursor()
     clear()
     acno = input('Enter customer Account No. :')
