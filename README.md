@@ -28,7 +28,7 @@ _______________________
 
 1. database = bankproject
 2. address = local
-3. user= mitaliraj
+3. user= mitali
 4. password= Mitali@12
 
 
